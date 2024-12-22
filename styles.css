@@ -11,11 +11,17 @@
   flex-wrap: wrap;
 }
 body{
-  backdrop-filter: blur(2px);
-  background: black;
-  background-size: 100% 100%;
   min-height: 100vh;
   overflow: hidden;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  filter: blur(2px);
 }
 @keyframes fall{
   from{
@@ -107,12 +113,17 @@ body{
   height: 100%;
   width: 100%;
   animation: fall 40s infinite cubic-bezier(0.0, 0.0, 0.0, 0.0);
-  z-index: -1;
+  z-index: -2;
 }
 label{
-  background: url(media/christmas.png) center;
-  background-size: 100%;
+  position: relative;
   height: 300px;
+  width: 100%;
+}
+label img{
+  position: absolute;
+  z-index: -1;
+  height: 100%;
   width: 100%;
 }
 input, input:focus{
@@ -127,14 +138,13 @@ input, input:focus{
   font-weight: 700;
 }
 button{
-  width: 70%;
   border: none;
   outline: none;
   background: #cbc4b2;
   color: #a8120c;
   border: 1px solid #a8120c;
+  padding: 0 1em;
   border-radius: 3px;
-  margin-top: -5%;
   font-size: 1em;
   font-weight: 600;
   font-style: italic;
