@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",
   function(){
-    localStorage.clear("name")
+    // localStorage.clear("name")
     const main = document.querySelectorAll(".main")
     const myName = document.querySelectorAll('.name')
     main.forEach(element =>{
