@@ -12,7 +12,7 @@
 }
 body{
   backdrop-filter: blur(2px);
-  background: url(media/image.jpeg);
+  background: black;
   background-size: 100% 100%;
   min-height: 100vh;
   overflow: hidden;
