@@ -19,7 +19,7 @@ body{
 }
 @keyframes fall{
   from{
-    transform: translateY(-200%);
+    transform: translateY(-100%);
   }
   to{
     transform: translateY(00);
@@ -106,7 +106,7 @@ body{
 .snow{
   height: 100%;
   width: 100%;
-  animation: fall 60s infinite cubic-bezier(0.0, 0.0, 0.0, 0.0);
+  animation: fall 40s infinite cubic-bezier(0.0, 0.0, 0.0, 0.0);
   z-index: -1;
 }
 label{
