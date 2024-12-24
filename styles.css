@@ -163,6 +163,10 @@ main{
   color: hsl(208, 100%, 100%);
   margin-top: -10%;
 }
+.container.content{
+  position: relative;
+  z-index: -1;
+}
 #img{
   animation: rock 6s infinite cubic-bezier(0, 0, 0, 0);
 }
