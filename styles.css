@@ -160,9 +160,8 @@ main{
 .content{
   flex: 1 1 min(550px, 100%);
   border: 3px solid rd;
-  color: hsl(208, 100%, 97%);
-  position: relative;
-  z-index: 5;
+  color: hsl(208, 100%, 100%);
+  margin-top: -10%;
 }
 #img{
   animation: rock 6s infinite cubic-bezier(0, 0, 0, 0);
@@ -177,12 +176,9 @@ h1{
 }
 #gift{
   position: absolute;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   bottom: 0;
   right: 0;
   animation: shake 1s 3 3s, shake 1s 3 15s, shake 1s 3 23s, shake 1s 3 32s, shake 1s 3 38s, shake 1s 3 45s;
-}
-h4.container{
-  margin-top: 5%;
 }
